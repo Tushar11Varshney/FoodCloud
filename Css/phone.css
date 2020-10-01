@@ -1,0 +1,76 @@
+#navbar{
+    flex-direction: column;
+    overflow: hidden;
+}
+#navbar #list li a{
+        font-size: 0.6rem;
+        padding: 0px 20px;
+}
+#home-section h1{
+    padding-top: 50px ;
+    font-family: 'Acme', sans-serif;
+    color: white;
+}
+#home-section{
+    height: 294px;
+    overflow: hidden;
+    padding: 24px 0px;
+}
+#home-section p{
+    color: white;
+    font-family: 'Crimson Pro', serif;
+    font-size: 0.8rem;
+}
+#home-section::before{
+    height: 332px;
+}
+#services{
+    flex-direction: column;
+}
+#clients{
+    flex-wrap: wrap;
+}
+#clients img{
+    height: 50px;
+    width: 50px;
+}
+#clients-container{
+    margin-top: 15px;
+    height: 255px;
+}
+#clients-container::before{
+    content: "";
+    position: absolute;
+    background-image: url("client.jpg");
+    height: 240px;
+    width: 100%;
+    opacity:0.5 ;
+    z-index: -1;
+}
+.h-primary{
+    font-size: 1rem;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    background-image: url("contact.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 368px;
+    width: 100%;
+    opacity: 0.7;
+    z-index: -1;
+}
+#contact-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 0px 0px 10px;
+}
+#contact-box input, #contact-box textarea {
+    width: 78%;
+    padding: 0.5rem;
+    border-radius: 10px;
+}

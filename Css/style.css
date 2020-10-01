@@ -1,0 +1,192 @@
+/* CSS-RESET */
+*{
+    padding:0px;
+    margin: 0px;
+}
+
+/* NAVIGATION BAR */
+#navbar{
+    position: absolute;  /*relative se apni jgh h rhega,absolute se parent ki jgh se rhega*/
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0.6;
+    z-index: -1;
+    left: 0px;
+    top: 0px;
+}
+/* NAVIGATION BAR: LOGO */
+#logo{
+    margin: 10px;
+}
+#logo img{
+    height: 50px;
+    width: 50px;
+}
+
+/* NAVIGATION BAR: LIST */
+#navbar #list{
+    display: flex;
+}
+#navbar #list li{
+    list-style: none;
+    /* padding: 0px 35px; */
+}
+#navbar #list li a{
+    font-family: 'Acme', sans-serif;
+    color: white;
+    text-decoration-line: none;
+    padding: 0px 35px;    /* jab a pr hover lgaynge tou jahan padding di h udhr mouse lejaane pr bhi higlight hoga li pr lgaynge tou ni hoga*/
+    font-size: 1.2rem;
+}
+#navbar #list li a:hover{
+    color: black;
+    background-color:white;
+    border-radius: 20px;
+}
+
+/* Home-section */
+#home-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height:420px;
+    align-items: center;
+}
+#home-section::before{
+    content: "";
+    position: absolute;
+    background-image: url("../Images/bg1.jpg");
+    background-repeat: no-repeat;
+    background-position:center center;
+    background-size: cover;
+    height: 400px;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    opacity: 0.89;
+    z-index: -1;
+}
+#home-section h1{
+    padding: 10px;
+    font-family: 'Acme', sans-serif;
+    color: white;
+}
+#home-section p{
+    color: white;
+    font-family: 'Crimson Pro', serif;
+    font-size: 1.2rem;
+}
+
+/* Services Section */
+#services{
+    display: flex;
+}
+#services .box{
+    border:2px solid red;
+    margin: 8px 20px;
+    border-radius: 23px;
+    padding: 6px 9px;
+    font-family: 'Crimson Pro', serif;
+    background-color: silver;
+}
+#services img{
+    display: block;
+    height: 156px;
+    margin:auto;
+}
+
+/* Utlity Classes */
+.h-primary{
+    font-size: 2.5rem;
+    color:black;
+    font-family: 'Acme', sans-serif;
+}
+.h-secondary{
+    font-size: 1.5rem;
+    color: black;
+    font-family: 'Acme', sans-serif;
+}
+.center{
+    text-align: center;
+}
+.btn{
+    padding: 4px;
+    margin: 7px 0px 0px 0px;
+    border-radius: 8px;
+    border-color: 2px solid white;
+    border: 2px solid white;
+    color: black;
+    background-color: #f9d31c;
+    cursor: pointer;
+}
+
+/* Client-Section */
+#clients-container{
+    margin-top:15px ;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px;
+    height: 137px;
+}
+.client-item img{
+    height: 106px;
+    padding: 0px 80px;
+}
+#clients-container::before{
+    content: "";
+    position: absolute;
+    background-image: url("../Images/client.jpg");
+    height: 200px;
+    width: 108%;
+    opacity:0.5 ;
+    z-index: -1;
+}
+
+/* Contact Section */
+#contact::before{
+    content: "";
+    position: absolute;
+    background-image: url("../Images/contact.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 398px;
+    width: 110%;
+    opacity: 0.7;
+    z-index: -1;
+}
+
+#contact-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 10px;
+}
+#contact-box label{
+    font-family: 'Crimson Pro', serif;
+    font-size: 1.3rem;
+}
+
+/* Footer */
+#footer{
+    background-color: black;
+    color: white;
+    word-wrap:break-word;
+}
